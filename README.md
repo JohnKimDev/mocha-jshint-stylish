@@ -3,7 +3,7 @@ mocha-jshint-stylish
 
 This project is based [**mocha-jshint**](https://github.com/ebdrup/mocha-jshint) and [**jshint-stylish**](https:/github.com/sindresorhus/jshint-stylish) projects. I also added few more options to make more flexible to use. 
 
-![](screenshot-stylish.png)
+![](https://raw.githubusercontent.com/JohnKimDev/mocha-jshint-stylish/master/screenshot-stylish.png)
 
 Run jshint as Mocha tests with the jshint-stylish reporter.
 
@@ -125,7 +125,7 @@ require('mocha-jshint-stylish')({
 ```
 
 **stylish**
-![](screenshot-stylish.png)
+![](https://raw.githubusercontent.com/JohnKimDev/mocha-jshint-stylish/master/screenshot-stylish.png)
 
 or use a custom NPM module or create your own, you can pass the NPM module name or path to a custom reporter file.
 

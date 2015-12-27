@@ -17,11 +17,7 @@
     "minimatch": "3.0.0",
     "shelljs": "^0.4.0",
     "text-table": "^0.2.0",
-    "uniq": "^1.0.1",
-    "util": "*",
-    "child_process": "*",
-    "path": "*",
-    "fs": "*"
+    "uniq": "^1.0.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
