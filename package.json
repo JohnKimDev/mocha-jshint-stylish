@@ -1,0 +1,43 @@
+{
+  "name": "mocha-jshint-stylish",
+  "version": "2.2.5",
+  "description": "run JSHint as mocha tests with the stylish reporter",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "mocha",
+    "jshint"
+  ],
+  "author": {
+    "name": "John Kim"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": ""
+  },
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "jshint": "~2.7.0",
+    "minimatch": "3.0.0",
+    "shelljs": "^0.4.0",
+    "text-table": "^0.2.0",
+    "uniq": "^1.0.1",
+    "util": "*",
+    "child_process": "*",
+    "path": "*",
+    "fs": "*"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com:JohnKimDev/mocha-jshint-stylish.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JohnKimDev/mocha-jshint-stylish/issues"
+  },
+  "homepage": "https://github.com/JohnKimDev/mocha-jshint-stylish"
+}
