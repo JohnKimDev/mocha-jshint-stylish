@@ -1,21 +1,15 @@
 {
   "name": "mocha-jshint-stylish",
-  "version": "2.2.5",
+  "version": "1.0.0",
   "description": "run JSHint as mocha tests with the stylish reporter",
   "main": "index.js",
-  "scripts": {
-    "test": "mocha"
-  },
-  "keywords": [
-    "mocha",
-    "jshint"
-  ],
-  "author": {
-    "name": "John Kim"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "mocha": ""
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "shelljs": "^0.4.0",
+    "jshint": "^2.7.0",
+    "minimatch": "^3.0.0",
+    "text-table": "^0.2.0",
+    "uniq": "^1.0.1"
   },
   "dependencies": {
     "chalk": "^1.1.1",
@@ -29,15 +23,23 @@
     "path": "*",
     "fs": "*"
   },
-  "directories": {
-    "test": "test"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "github.com:JohnKimDev/mocha-jshint-stylish.git"
   },
+  "keywords": [
+    "jshint",
+    "mocha",
+    "jshint-stylish",
+    "mocha-jshint"
+  ],
+  "author": "John Kim",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/JohnKimDev/mocha-jshint-stylish/issues"
   },
-  "homepage": "https://github.com/JohnKimDev/mocha-jshint-stylish"
+  "homepage": "https://github.com/JohnKimDev/mocha-jshint-stylish#readme"
 }
