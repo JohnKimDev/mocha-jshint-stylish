@@ -74,16 +74,13 @@ module.exports = function (err,options) {
       }).join('\n') + '\n\n';
 
 
-      ret += chalk.white.underline("Total Status") + '\n';
+
       if (total > 0) {
-        ret += chalk.red((process.platform !== 'win32' ? '✖ ' : '') + total + ' problem' + (total === 1 ? '' : 's'))
+        ret += chalk.white.underline("Total Status") + '\n';
+            + chalk.red((process.platform !== 'win32' ? '✖ ' : '') + total + ' problem' + (total === 1 ? '' : 's'))
             + chalk.blue(" in " + numFiles + " file" + (numFiles === 1 ? '' : 's'));
-      } else {
-        ret += chalk.green((process.platform !== 'win32' ? '✔ ' : '') + 'Everything looks OK');
-        ret = '\n' + ret.trim();
       }
 
-
-      err.message += ret + '\n';
+      err.message += ((err.message && ret.length) ? ('\n' + ret) : '');
   };
 };

@@ -14,7 +14,8 @@ function runJSHint(files, reporter, opt, cb) {
     reporter: require(reporter)(err, opt)
   };
   jsHint.run(options);
-  if (err.message) {
+
+  if (err.message !== '') {
     return cb(err);
   }
   return cb();
@@ -22,10 +23,10 @@ function runJSHint(files, reporter, opt, cb) {
 
 module.exports = function (opt) {
   opt = opt || {};
-  opt.title = opt.title || 'jshint';					//default: jshint
-  opt.timeout = opt.timeout || 90000;					//default: 90000
-  opt.verbose =  opt.verbose || false	                //default: false
-  opt.reporter = opt.reporter || 'stylish'; 		    //default: stylish
+  opt.title = opt.title || 'jshint';          //default: jshint
+  opt.timeout = opt.timeout || 90000;         //default: 90000
+  opt.verbose =  opt.verbose || false         //default: false
+  opt.reporter = opt.reporter || 'stylish';   //default: stylish
   opt.git = opt.git || null;
   opt.paths = opt.paths || ['.'];
 
