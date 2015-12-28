@@ -1,6 +1,6 @@
 {
   "name": "mocha-jshint-stylish",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "run JSHint as mocha tests with the stylish reporter",
   "main": "index.js",
   "dependencies": {
