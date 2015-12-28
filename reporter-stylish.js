@@ -76,13 +76,13 @@ module.exports = function (err,options) {
 
       ret += chalk.white.underline("Total Status") + '\n';
       if (total > 0) {
-        ret += chalk.red((process.platform !== 'win32' ? '✖ ' : '') + total + ' problem' + (total === 1 ? '' : 's'));
+        ret += chalk.red((process.platform !== 'win32' ? '✖ ' : '') + total + ' problem' + (total === 1 ? '' : 's'))
+            + chalk.blue(" in " + numFiles + " file" + (numFiles === 1 ? '' : 's'));
       } else {
-        ret += chalk.green((process.platform !== 'win32' ? '✔ ' : '') + 'No problems');
+        ret += chalk.green((process.platform !== 'win32' ? '✔ ' : '') + 'Everything looks OK');
         ret = '\n' + ret.trim();
       }
 
-      ret += chalk.blue(" in " + numFiles + " file" + (numFiles === 1 ? '' : 's'));
 
       err.message += ret + '\n';
   };
